@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="land.css">
+    <title>food</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/ac9bb7779e.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/ac9bb7779e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sec">
+        <nav class="navbar">
+            <img src="logo.png" alt="">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#aboutus">ABOUT US</a></li>
+                <li> <a href="#contact">CONTACT</a></li>
+
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="text">
+                <h1>THAT'S WHAT  <span>I LIKE!!</span></h1>
+                <h2>The choice of new generation..</h2><br><br>
+                <a href="#">WHAT'S NEW</a>
+            </div>
+            <div class="pic">
+                <img src="pepsi001.png" class="pepsi" alt="">
+            </div>
+            <div class="media">
+                <a href="#ins"><i class="fab fa-instagram" id="insta"></i></a>
+                <a href="#twt"><i class="fab fa-twitter" id="tw"></i></a>
+                <a href="#lnk"><i class="fab fa-linkedin-in" id="lnk"></i></a>
+            </div>
+        </div>
+        <div class="others">
+            <img src="pepsi001.png" onclick="bottlechange('pepsi001.png') ;backgroundchange('rgb(56, 56, 212)')" id="img1" alt="">
+            <img src="pepsi002.png" onclick="bottlechange('pepsi002.png') ;backgroundchange('#e60c2c')" id="img2" alt="">
+            <img src="pepsi003.png"  onclick="bottlechange('pepsi003.png') ;;backgroundchange('#1e1e1e')" id="img3" alt="">
+        </div>
+     
+    </section>
+    <script>
+        function bottlechange(anything)
+        {
+            document.querySelector('.pepsi').src = anything;
+        }
+        function backgroundchange(color)
+        {
+            const sec=document.querySelector('.sec');
+            sec.style.background=color;
+        }
+    </script>
+</body>
+
+</html>
